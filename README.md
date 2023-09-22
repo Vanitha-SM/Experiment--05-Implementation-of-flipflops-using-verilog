@@ -147,14 +147,28 @@ Qbar=R|(Qbar&(~S));
 end
 endmodule
 ```
-
-
+```
+module jkflipflop(j,k,clk,q,qbar);
+input j,k,clk;
+output reg q;
+output reg qbar;
+initial q=0;
+initial qbar=1;
+always @(posedge clk)
+begin
+q=(j&(~q))|((~k)&q);
+qbar=((~j)&q)|(k &(~q));
+end 
+endmodule
+```
 
 
 ### RTL LOGIC FOR FLIPFLOPS 
 #### SR Fliflop
 ![image](https://github.com/Vanitha-SM/Experiment--05-Implementation-of-flipflops-using-verilog/assets/119557985/1dcc2eb2-8cf4-4311-81f9-683df287e3b9)
+#### JK Flipflop
 
+![Screenshot 2023-09-22 093907](https://github.com/Vanitha-SM/Experiment--05-Implementation-of-flipflops-using-verilog/assets/119557985/d96367a3-a392-4d83-8df9-08f7cf4b5228)
 
 
 
@@ -166,6 +180,8 @@ endmodule
 ### Output Waveform:
 ##### SR Flipflop
 ![WhatsApp Image 2023-09-22 at 09 07 36](https://github.com/Vanitha-SM/Experiment--05-Implementation-of-flipflops-using-verilog/assets/119557985/b039e5b3-92ee-4e7a-b933-63774d4e9300)
+#### JK Flipflop
+![Screenshot 2023-09-22 094111](https://github.com/Vanitha-SM/Experiment--05-Implementation-of-flipflops-using-verilog/assets/119557985/095b20f1-0136-4e3c-ae5c-25ba2ba03c68)
 
 
 
