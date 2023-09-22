@@ -181,7 +181,7 @@ endmodule
 ##### SR Flipflop
 ![WhatsApp Image 2023-09-22 at 09 07 36](https://github.com/Vanitha-SM/Experiment--05-Implementation-of-flipflops-using-verilog/assets/119557985/b039e5b3-92ee-4e7a-b933-63774d4e9300)
 #### JK Flipflop
-![Screenshot 2023-09-22 094111](https://github.com/Vanitha-SM/Experiment--05-Implementation-of-flipflops-using-verilog/assets/119557985/095b20f1-0136-4e3c-ae5c-25ba2ba03c68)
+![image](https://github.com/Vanitha-SM/Experiment--05-Implementation-of-flipflops-using-verilog/assets/119557985/a2536872-4e50-4964-87be-8b35d0801816)
 
 
 
