@@ -1,3 +1,7 @@
+```
+Name: Vanitha S
+Register Number: 212222100057
+```
 # Experiment 06 Implementation of flipflops using verilog
 ### AIM: 
 To implement all the flipflops using verilog and validating their functionality using their functional tables
@@ -147,6 +151,8 @@ Qbar=R|(Qbar&(~S));
 end
 endmodule
 ```
+#### JK Flipflop:
+
 ```
 module jkflipflop(j,k,clk,q,qbar);
 input j,k,clk;
@@ -161,16 +167,48 @@ qbar=((~j)&q)|(k &(~q));
 end 
 endmodule
 ```
+#### D Flipflop:
+```
+module dflipflop(d,clk,q,qbar); 
+input d,clk; 
+output reg q; 
+output reg qbar; 
+initial q=0;
+initial qbar=1; 
+always @(posedge clk) 
+begin 
+q=d; 
+qbar=~q; 
+end 
+endmodule
+```
 
-
+#### T Flipflop:
+```
+module t(T,clk,q,qbar);
+input T,clk;
+output reg q;
+output reg qbar;
+initial q=0;
+initial qbar=1;
+always @ (posedge clk)
+begin
+q=(T&(~q))|((~T)&q);
+qbar=(~q);
+end
+endmodule
+```
 ### RTL LOGIC FOR FLIPFLOPS 
 #### SR Fliflop
 ![image](https://github.com/Vanitha-SM/Experiment--05-Implementation-of-flipflops-using-verilog/assets/119557985/1dcc2eb2-8cf4-4311-81f9-683df287e3b9)
 #### JK Flipflop
 
 ![Screenshot 2023-09-22 093907](https://github.com/Vanitha-SM/Experiment--05-Implementation-of-flipflops-using-verilog/assets/119557985/d96367a3-a392-4d83-8df9-08f7cf4b5228)
+#### D Flipflop
 
-
+![Screenshot 2023-10-06 092434](https://github.com/Vanitha-SM/Experiment--05-Implementation-of-flipflops-using-verilog/assets/119557985/c7888cb3-a5f3-4ec7-af21-d40b20b4c56e)
+#### T Flipflop
+![image](https://github.com/Vanitha-SM/Experiment--05-Implementation-of-flipflops-using-verilog/assets/119557985/f872e0ff-15fd-46cc-92d8-1edc88a05746)
 
 ### Truth table:
 
@@ -182,9 +220,10 @@ endmodule
 ![WhatsApp Image 2023-09-22 at 09 07 36](https://github.com/Vanitha-SM/Experiment--05-Implementation-of-flipflops-using-verilog/assets/119557985/b039e5b3-92ee-4e7a-b933-63774d4e9300)
 #### JK Flipflop
 ![image](https://github.com/Vanitha-SM/Experiment--05-Implementation-of-flipflops-using-verilog/assets/119557985/a2536872-4e50-4964-87be-8b35d0801816)
-
-
-
+#### D Flipflop:
+![Screenshot 2023-10-06 093205](https://github.com/Vanitha-SM/Experiment--05-Implementation-of-flipflops-using-verilog/assets/119557985/f355220c-0610-4814-9b91-b313676d312b)
+#### T Flipflop:
+![image](https://github.com/Vanitha-SM/Experiment--05-Implementation-of-flipflops-using-verilog/assets/119557985/4cf86f61-ea62-41db-af11-cb61d6d11541)
 
 
 
