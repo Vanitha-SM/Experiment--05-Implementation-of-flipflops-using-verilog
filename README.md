@@ -2,7 +2,7 @@
 Name: Vanitha S
 Register Number: 212222100057
 ```
-# Experiment 06 Implementation of flipflops using verilog
+# Experiment 05 Implementation of flipflops using verilog
 ### AIM: 
 To implement all the flipflops using verilog and validating their functionality using their functional tables
 ### HARDWARE REQUIRED:  
