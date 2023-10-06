@@ -210,10 +210,6 @@ endmodule
 #### T Flipflop
 ![image](https://github.com/Vanitha-SM/Experiment--05-Implementation-of-flipflops-using-verilog/assets/119557985/f872e0ff-15fd-46cc-92d8-1edc88a05746)
 
-### Truth table:
-
-
-
 
 ### Output Waveform:
 ##### SR Flipflop
